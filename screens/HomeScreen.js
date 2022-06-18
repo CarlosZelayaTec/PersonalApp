@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
+import { FontAwesome5, Entypo } from "@expo/vector-icons"
 
 const HomeScreen = () => {
   return (
@@ -16,11 +17,33 @@ const HomeScreen = () => {
 
       <View style={styles.fillColor}>
         <View style={styles.containerInfo}>
-          <Text style={styles.info} >Nombre: Carlos Jose Zelaya Baca</Text>
-          <Text style={styles.info} >Nacimiento: Carlos Jose Zelaya Baca</Text>
-          <Text style={styles.info} >Correo electronico: Carlos Jose Zelaya Baca</Text>
-          <Text style={styles.info} >N° Teléfono: Carlos Jose Zelaya Baca</Text>
-          <Text style={styles.info} >Dirección: Carlos Jose Zelaya Baca</Text>
+
+          <View style={styles.containerInfoOne}>
+            <FontAwesome5 name="user-circle" size={30} color={"#3f90e2"} />
+            <Text style={styles.info} >Carlos Jose Zelaya Baca</Text>
+          </View>
+
+          <View style={styles.containerInfoOne}>
+            <FontAwesome5 name="birthday-cake" size={30} color={"#3f90e2"} />
+            <Text style={styles.info} >09 de Febrero de 2001</Text>
+          </View>
+          
+          <View style={styles.containerInfoOne}>
+            <FontAwesome5 name="location-arrow" size={30} color={"#3f90e2"} />
+            <Text style={styles.info} >San Marcos de Colón, Choluteca, Honduras</Text>
+          </View>
+          
+          <View style={styles.containerInfoOne}>
+            <FontAwesome5 name="phone-alt" size={30} color={"#3f90e2"} />
+            <Text style={styles.info} >+504 9588-5258</Text>
+          </View>
+          
+          <View style={styles.containerInfoOne}>
+            <Entypo name="email" size={30} color={"#3f90e2"} />
+            <Text style={styles.info} >czelayabaca@gmail.com</Text>
+          </View>
+
+          
         </View>
       </View>
 
@@ -77,6 +100,13 @@ const styles = StyleSheet.create({
   },
   info: {
     color: "#FFFFFF",
-    fontSize: 15
+    fontSize: 21
+  },
+  containerInfoOne: {
+    alignItems: "center",
+    // backgroundColor: "green",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "72%"
   }
 });
