@@ -32,7 +32,7 @@ const TrainingScreen = () => {
       <BlockTraining
         title={"Educación Alto Nivel"}
         icon={require("../assets/UTH.png")}
-        titleSchool={"Instituto Bautista El Buen Samaritano"}
+        titleSchool={"Universidad Tecnológica de Honduras"}
         titleTitle={"Pasante de la carrera de Ingeniería en Computación"}
         titlePlace={"Choluteca, Honduras"}
         titleYear={"2022 - Actualidad"}
