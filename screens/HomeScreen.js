@@ -29,9 +29,7 @@ const HomeScreen = () => {
 
           <View style={styles.containerInfoOne}>
             <FontAwesome5 name="location-arrow" size={30} color={"#3f90e2"} />
-            <Text style={styles.info}>
-              San Marcos de Colón, Choluteca, Honduras
-            </Text>
+            <Text style={styles.info}>San Marcos de Colón, Choluteca, Honduras</Text>
           </View>
 
           <View style={styles.containerInfoOne}>
@@ -95,15 +93,18 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     // borderStartWidth: 5
   },
+  containerInfoOne: {
+    flexDirection: "row",
+    alignItems: "center",
+    // backgroundColor: "green",
+    justifyContent: "space-between",
+    width: "72%",
+  },
   info: {
     color: "#FFFFFF",
     fontSize: 21,
-  },
-  containerInfoOne: {
-    alignItems: "center",
-    // backgroundColor: "green",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    width: "72%",
+    width: "90%",
+    // backgroundColor: "red",
+    textAlign: "right"
   },
 });

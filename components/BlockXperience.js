@@ -18,24 +18,29 @@ export default BlockXperience;
 const styles = StyleSheet.create({
   containerBlock: {
     justifyContent: "space-between",
-    maxWidth: "45%",
-    height: 160,
+    width: "45%",
+    height: 170,
     marginTop: 10,
     backgroundColor: "#85C1E9",
     padding: 8,
     borderRadius: 10,
+    // borderWidth: 1
   },
   icono: {
-    width: 60,
-    height: 60,
+    width: 70,
+    height: 70,
+    borderRadius: 10,
+    borderWidth: 1,
   },
   containerInfo: {
     // backgroundColor: "white"
   },
   title: {
     fontSize: 20,
+    fontWeight: "600"
   },
   Subtitle: {
-    fontSize: 15,
+    fontSize: 13,
+    fontWeight: "300"
   },
 });

@@ -5,7 +5,6 @@ import BlockXperience from "../components/BlockXperience";
 const XperienceScreen = () => {
   return (
     <View style={styles.container}>
-      {/* <View style={styles.full}> */}
 
       <BlockXperience
         icono={require("../assets/JS.png")}
@@ -14,24 +13,23 @@ const XperienceScreen = () => {
       />
 
       <BlockXperience
-        icono={require("../assets/JS.png")}
-        title={"JavaScript"}
-        subtitle={"1 año de Experiencia - Freelance"}
+        icono={require("../assets/unithel.jpg")}
+        title={"UNITHEL"}
+        subtitle={"1 mes de Experiencia - Práctica profesional"}
       />
       
       <BlockXperience
-        icono={require("../assets/JS.png")}
-        title={"JavaScript"}
-        subtitle={"1 año de Experiencia - Freelance"}
+        icono={require("../assets/tvs.jpg")}
+        title={"TVS CANAL 42"}
+        subtitle={"3 meses de Experiencia - Operador de cámaras y controles"}
       />
       
       <BlockXperience
-        icono={require("../assets/JS.png")}
-        title={"JavaScript"}
+        icono={require("../assets/expo.png")}
+        title={"REACT NATIVE EXPO"}
         subtitle={"1 año de Experiencia - Freelance"}
       />
 
-      {/* </View> */}
     </View>
   );
 };
@@ -44,35 +42,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-evenly",
     backgroundColor: "#172138",
-    // alignItems: "baseline"
-    // minWidth: "100%"
-  },
-  // full: {
-  //   // alignItems: "stretch",
-  //   // flexDirection: "row",
-  //   // width: "100%",
-  //   backgroundColor: "red"
-  // },
-  containerBlock: {
-    justifyContent: "space-between",
-    width: "45%",
-    height: 160,
-    marginTop: 10,
-    backgroundColor: "#85C1E9",
-    padding: 8,
-    borderRadius: 10,
-  },
-  icono: {
-    width: 60,
-    height: 60,
-  },
-  containerInfo: {
-    // backgroundColor: "white"
-  },
-  title: {
-    fontSize: 20,
-  },
-  Subtitle: {
-    fontSize: 15,
+    flexWrap: "wrap",
   },
 });
